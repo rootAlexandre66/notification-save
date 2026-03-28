@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "34923585308",
+    "project_id": "notime-3de47",
+    "storage_bucket": "notime-3de47.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34923585308:android:abdb598ed923fe416864d9",
+        "android_client_info": {
+          "package_name": "com.cleilsonalvino.notime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTMS0uzJ85mrw1GKhD_73iX2111bnXoGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

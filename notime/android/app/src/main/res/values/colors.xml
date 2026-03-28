@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_dark">#0B4E80</color>    <color name="primary_light">#00D1FF</color>   <color name="accent_blue">#1A8CCB</color>     <color name="surface_dark">#083A5F</color>    <color name="text_primary">#FFFFFF</color>    <color name="text_secondary">#7DB9E0</color>  <color name="error_red">#FF5252</color>
+</resources>

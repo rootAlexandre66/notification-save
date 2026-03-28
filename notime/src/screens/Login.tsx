@@ -1,18 +1,26 @@
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 import { useState } from 'react';
+import { getAuth } from '@react-native-firebase/auth';
 
 export function Login() {
   const [email, setEmail] = useState<string>('');
   const [senha, setSenha] = useState<string>('');
+  const [res , setRes] = useState<string>('');
 
-  function handleLogin() {
-    console.log({ email, senha });
+async function handleLogin() {
+  try {
+    const user = await getAuth().signInWithEmailAndPassword(email, senha);
+    setRes(user.user.email ?? 'Login bem-sucedido, mas email não disponível');
+  } catch (error) {
+    console.log('Erro:', error);
+    setRes('Erro ao fazer login: ' + error as any);
   }
+}
 
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
-
+      <Text>{res}</Text>
       <TextInput
         placeholder="Email"
         style={styles.input}

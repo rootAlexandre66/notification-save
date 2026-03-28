@@ -1,12 +1,13 @@
-import { View, StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { StyleSheet } from "react-native";
 import { Login } from "./src/screens/Login";
 
 export const App = () => {
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Login/>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -15,5 +16,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
+    padding: 16,
+    backgroundColor: "#8f8f8f",
   }
 })
